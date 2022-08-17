@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>글 작성 페이지</h1>
+<hr>
+<form action="{% url 'articles:board_write' %}" method="POST">
+
+  <label for="name">제목 : </label>
+  <input type="text" id="name" name="title">
+
+  <label for="cnt">내용 : </label>
+  <input type="text" id="cnt" name="content">
+
+  <input type="submit" value="글 작성">
+</form>
+{% endblock %}
+

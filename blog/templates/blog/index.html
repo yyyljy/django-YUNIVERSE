@@ -1,0 +1,134 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <!-- ***** Main Banner Area Start ***** -->
+    <div class="main-banner" id="top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="left-content">
+                        <div class="thumb">
+                            <div class="inner-content">
+                                <p class="left_banner_letter">
+                                <h4>I'M</h4>
+                                <h4>A</h4>
+                                <h4>B&ensp;oy</h4>
+                                <h4>C&ensp;an</h4>
+                                <h4>D&ensp;o</h4>
+                                <h4>E&ensp;verything</h4>
+                                <span>Developer, Writer, Artist &amp; Player</span>
+                                </p>
+                            </div>
+                            <img src="{% static 'blog/images/left_banner.png' %}">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="right-content">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="right-first-image">
+                                    <div class="thumb">
+                                        <div class="inner-content">
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="inner">
+                                                <h4>Spider Web</h4>                                                
+                                                <h4>Blockchain Project</h4>
+                                                <div class="main-border-button">
+                                                    <a href="#">More Information</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img src="{% static 'blog/images/baner-right-image-W.png' %}">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="right-first-image">
+                                    <div class="thumb">
+                                        <div class="inner-content">
+                                            <h4>Articles</h4>
+                                            <span>Writes, Articles</span>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="inner">
+                                                <h4>Articles</h4>
+                                                <p>Yuni's Writing Planet.</p>
+                                                <div class="main-border-button">
+                                                    <a href="articles">Go to Read</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img class="right_banner" src="{% static 'blog/images/right_banner.png' %}">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="right-first-image">
+                                    <div class="thumb">
+                                        <div class="inner-content">
+                                            <h4>Music</h4>
+                                            <span>Youtube</span>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="inner">
+                                                <h4>Music</h4>
+                                                <p>Yuni's Music Planet.</p>
+                                                <div class="main-border-button">
+                                                    <a href="https://www.youtube.com/channel/UCWeQ3ajvi2KZPOfFMDtuxNQ">Go to Youtube</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img class="right_banner" src="{% static 'blog/images/right_banner.png' %}">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="right-first-image">
+                                    <div class="thumb">
+                                        <div class="inner-content">
+                                            <h4>Photos</h4>
+                                            <span>Gallery</span>
+                                        </div>
+                                        <div class="hover-content">
+                                            <div class="inner">
+                                                <h4>Photos</h4>
+                                                <p>Yuni's Photo Planet.</p>
+                                                <div class="main-border-button">
+                                                    <a href="#">Go to Gallery</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img class="right_banner" src="{% static 'blog/images/right_banner.png' %}">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Main Banner Area End ***** -->
+{% endblock %}
+    <script>
+
+        $(function() {
+            var selectedClass = "";
+            $("p").click(function(){
+            selectedClass = $(this).attr("data-rel");
+            $("#portfolio").fadeTo(50, 0.1);
+                $("#portfolio div").not("."+selectedClass).fadeOut();
+            setTimeout(function() {
+              $("."+selectedClass).fadeIn();
+              $("#portfolio").fadeTo(50, 1);
+            }, 500);
+                
+            });
+        });
+
+    </script>
+
+  </body>
+</html>
