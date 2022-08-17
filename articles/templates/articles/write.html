@@ -2,15 +2,14 @@
 {% block content %}
 <h1>글 작성 페이지</h1>
 <hr>
-<form action="{% url 'articles:board_write' %}" method="POST">
+<form action="{% url 'articles:create' %}" method="POST">
+  {% csrf_token %}
+  <label for="title">제목 : </label>
+  <input type="text" id="title" name="title">
 
-  <label for="name">제목 : </label>
-  <input type="text" id="name" name="title">
-
-  <label for="cnt">내용 : </label>
-  <input type="text" id="cnt" name="content">
-
-  <input type="submit" value="글 작성">
+  <label for="contents">내용 : </label>
+  <input type="text" id="text" name="contents">
+  <input type="submit" value="글 저장">
 </form>
 {% endblock %}
 

@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<h4>
+    dashboard
+</h4>
+    {% for article in articles %}
+            <p>제목 : {{ article.title }} </p>
+            <p>내용 : {{ article.contents }} </p>
+            <hr>
+    {% endfor %}
+{% endblock %}

@@ -600,7 +600,7 @@ header
     padding: 0px !important;
     border: none !important;
     background: #f7f7f7 !important;
-    color: #191a20 !important;
+    color: #fff !important;
   }
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
@@ -629,7 +629,7 @@ header
     height: auto !important;
   }
   .header-area .main-nav .nav li.submenu:after {
-    color: #3B566E;
+    color: #fff;
     right: 25px;
     font-size: 14px;
     top: 15px;
@@ -659,6 +659,7 @@ banner
   border-bottom: 3px dotted #fff;
   padding-top: 140px;
   padding-bottom: 30px;
+  color : #fff
 }
 
 .main-banner .left-content .thumb img {

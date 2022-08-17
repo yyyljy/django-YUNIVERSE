@@ -31,7 +31,7 @@
                       <!-- ***** Logo End ***** -->
                       <!-- ***** Menu Start ***** -->
                       <ul class="nav">
-                          <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                          <li class="scroll-to-section"><a href="/" class="active">Home</a></li>
                           <li class="submenu">
                               <a href="javascript:;">W</a>
                               <ul>
@@ -70,8 +70,12 @@
       </div>
   </header>
   <!-- ***** Header Area End ***** -->
+  <div class="main-banner" id="top">
+    <div class="container-fluid">
         {% block content %}
-        {% endblock %}    
+        {% endblock %}
+    </div>
+  </div>
     <!-- jQuery -->
     <script src="{% static 'blog/js/jquery-2.1.0.min.js' %}"></script>
 
