@@ -207,6 +207,9 @@ body {
 header
 --------------------------------------------- 
 */
+li {
+  text-align: center;
+}
 
 .background-header {
   border-bottom: none !important;
@@ -319,7 +322,7 @@ header
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-  color: #fff!important;
+  color: #1e1e1e!important;
 }
 
 .background-header .main-nav .nav li:hover a,
@@ -527,7 +530,7 @@ header
 }
 
 .header-area.header-sticky .nav li a.active {
-  color: #fff;
+  color: #1e1e1e;
 }
 
 @media (max-width: 1200px) {
@@ -546,7 +549,7 @@ header
   }
   .header-area.header-sticky .nav li a:hover,
   .header-area.header-sticky .nav li a.active {
-    color: #fff!important;
+    color: #1e1e1e!important;
     opacity: 1;
   }
   .header-area.header-sticky .nav li.search-icon a {
@@ -582,7 +585,7 @@ header
     margin-left: 0px;
   }
   .header-area .main-nav .nav li:first-child {
-    border-top: 1px solid #eee;
+    border-top: 1px solid #d8ca9d;
   }
   .header-area.header-sticky .nav {
     margin-top: 100px !important;
@@ -590,7 +593,7 @@ header
   .header-area .main-nav .nav li {
     width: 100%;
     background: #fff;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #d8ca9d;
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
@@ -600,11 +603,11 @@ header
     padding: 0px !important;
     border: none !important;
     background: #f7f7f7 !important;
-    color: #fff !important;
+    color: #1e1e1e !important;
   }
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
-    color: #aaa!important;
+    color: #1e1e1e!important;
   }
   .header-area .main-nav .nav li.submenu ul {
     position: relative;
@@ -651,6 +654,11 @@ header
 banner
 --------------------------------------------- 
 */
+.left_banner_letter h4{
+  width: 100%;
+  text-align: left !important;
+}
+
 .right_banner {
   border :1px solid #d8ca9d;
 }
@@ -677,7 +685,7 @@ banner
 .main-banner .left-content .inner-content h4 {
   color: #fff;
   margin-top: -10px;
-  font-size: 52px;
+  font-size: 60px;
   font-weight: 700;
   margin-bottom: 20px;
 }
@@ -2230,7 +2238,7 @@ responsive
 @media (max-width: 1200px) {
   .main-banner .right-content .right-first-image .thumb .hover-content p {
     display: none;
-  }
+  } 
 }
 
 @media (max-width: 992px) {
