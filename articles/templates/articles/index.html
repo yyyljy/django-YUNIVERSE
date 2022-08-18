@@ -6,8 +6,8 @@
     <a href="{% url 'articles:write' %}">글쓰기</a>
 
     {% for article in articles %}
-    <p>제목 : {{ article.title }} </p>
-    <p>내용 : {{ article.contents }} </p>
-    <hr>
-{% endfor %}
+        <p>제목 : {{ article.title }} </p>
+        <p>내용 : {{ article.contents }} </p>
+        <hr>
+    {% endfor %}
 {% endblock %}
