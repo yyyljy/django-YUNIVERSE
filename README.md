@@ -17,6 +17,6 @@ https://nerogarret.tistory.com/
 
 오류 : nginx: [emerg] invalid number of arguments in "charset" directive in /etc/nginx/sites-enabled/mysite.conf:5
 
-발생 원인 : 오타
+발생 원인 : 오타(4번 라인 세미콜론 누락)
 
 해결 방법 : 오타 수정
