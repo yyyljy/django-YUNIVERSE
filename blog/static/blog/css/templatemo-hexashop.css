@@ -374,7 +374,7 @@ li {
   display: block;
   background: #f7f7f7;
   color: #1e1e1e!important;
-  padding-left: 20px;
+  /* padding-left: 20px; */
   height: 40px;
   line-height: 40px;
   -webkit-transition: all 0.3s ease 0s;
