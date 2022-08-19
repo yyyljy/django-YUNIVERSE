@@ -1,5 +1,11 @@
 # Django, AWS EC2, uWSGI, nginx
 
+## 자주 사용하게 될 명령어
+ sudo cp -f /srv/django-YUNIVERSE/.config/nginx/mysite.conf /etc/nginx/sites-available/mysite.conf
+ sudo ln -sf /etc/nginx/sites-available/mysite.conf /etc/nginx/sites-enabled/mysite.conf
+ sudo systemctl daemon-reload
+ sudo systemctl restart uwsgi nginx
+
 ## uWSGI, nginx 배포 참고 싸이트
 
 https://nerogarret.tistory.com/
@@ -13,7 +19,8 @@ https://nerogarret.tistory.com/
 
 해결 방법 : 우선 필수 모듈만 pip 로 직접 설치.
 
-2. 입력 명령어 : sudo systemctl restart nginx
+### 해결한 오류
+1. 입력 명령어 : sudo systemctl restart nginx
 
 오류 : nginx: [emerg] invalid number of arguments in "charset" directive in /etc/nginx/sites-enabled/mysite.conf:5
 
