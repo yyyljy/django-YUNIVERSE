@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
 {% block content %}
-    <h4>TEST PAGE</h4>
-    <span>Testing Writing and Reading</span>
-    <p></p>
-    <a href="{% url 'articles:write' %}">글쓰기</a>
+    <h4>Board</h4>
+    <span>Articles Here</span>
+
+    <!-- <a href="{% url 'articles:write' %}">글쓰기</a> -->
 
     {% for article in articles %}
         <p>제목 : {{ article.title }} </p>

@@ -7,7 +7,7 @@
  sudo ln -sf /etc/nginx/sites-available/mysite.conf /etc/nginx/sites-enabled/mysite.conf
 
  sudo systemctl daemon-reload
- 
+
  sudo systemctl restart uwsgi nginx
 
 ## uWSGI, nginx 배포 및 AWS Route53 참고 싸이트
@@ -31,3 +31,8 @@ https://nerogarret.tistory.com/
 발생 원인 : 오타(4번 라인 세미콜론 누락)
 
 해결 방법 : 오타 수정
+
+
+
+### TEMPLATE
+1. bootstrap4 hexashop-1.0.0
