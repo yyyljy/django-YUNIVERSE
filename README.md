@@ -3,8 +3,11 @@
 
 ## 자주 사용하게 될 명령어
  sudo cp -f /srv/django-YUNIVERSE/.config/nginx/mysite.conf /etc/nginx/sites-available/mysite.conf
+
  sudo ln -sf /etc/nginx/sites-available/mysite.conf /etc/nginx/sites-enabled/mysite.conf
+
  sudo systemctl daemon-reload
+ 
  sudo systemctl restart uwsgi nginx
 
 ## uWSGI, nginx 배포 및 AWS Route53 참고 싸이트
