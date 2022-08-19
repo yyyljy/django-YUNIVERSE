@@ -1,4 +1,4 @@
-# [yuniverse.me](yuniverse.me)
+# [yuniverse.me](http://yuniverse.me)
 # Django, AWS EC2 Route53, uWSGI, nginx
 
 ## 자주 사용하게 될 명령어
